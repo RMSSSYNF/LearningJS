@@ -1,0 +1,126 @@
+*,::before,::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    overflow: hidden;
+    color: #707070;
+    font-weight:500 ;
+    font-family: 'Segoe UI','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+
+
+main{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 20%;
+    height: 593px;
+    width: 786px;
+    background-color:#E4E4E4 ;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+}
+
+main .contener-head{
+    margin: 22px 21px 0;
+    height: 271px;
+    width: 744px;
+    background-color:#F5F5F5 ;
+    border-radius: 2px;
+}
+main .contener-head p{
+    text-align: center;
+    /* font-family: 'Segoe UI','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px; */
+    /* font-weight:500 ; */
+    margin: 72px 0 39px ;
+    /* color: #707070; */
+}
+.contener-head p span{
+    font-size: 45px;
+}
+.contener-head p .yellow{
+    color:#EBF148 ;
+}
+
+.contener-head p .red{
+    color:#F52377 ;
+}
+.contener-head p .green{
+    color: #76F538;
+
+}
+
+.btn{
+    position: relative;
+    height: 97px;
+    width: 97px;
+    border-radius: 50%;
+    margin-top: 34px;
+    background: #D4D3D2;
+}
+
+.btn .triangle{
+    position: absolute;
+    /* border: 1px solid;
+    height: 47px;
+    width: 53px; */
+    height: 0;
+    width: 0;
+    border-left: 35px solid #ABABAB;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    margin:25px 35px ;
+}
+
+.contener-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 97px;
+    width: 727px;
+    border-radius: 60px;
+    background-color: #BC95FF;
+    margin-top: 39px;
+
+}
+.contener-footer button{
+    height: 65px;
+    width: 172px;
+    border-radius: 10px;
+    border: transparent;
+    font-weight: inherit;
+    font-size: 20px;
+    color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    animation: choix linear .5s infinite alternate;
+}
+
+@keyframes choix{
+    0%{
+        box-shadow: #ababab 0px 0px 0px 0px;
+    }
+    25%{
+        box-shadow: #ababab 0px 0px 2px 1px;
+    }
+    50%{
+        box-shadow: #ababab 0px 0px 4px 3px;
+    }
+    75%{
+        box-shadow: #ababab 0px 0px 8px 5px;
+    }
+    100%{
+        box-shadow: #ababab 0px 0px 10px 6px;
+    }
+}
