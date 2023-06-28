@@ -94,7 +94,7 @@ main .contener-head p{
     margin-top: 39px;
 
 }
-.contener-footer button{
+/* .contener-footer*/ button{ 
     height: 65px;
     width: 172px;
     border-radius: 10px;
@@ -105,6 +105,24 @@ main .contener-head p{
     font-family: inherit;
     cursor: pointer;
     animation: choix linear .5s infinite alternate;
+
+}
+
+
+.clic-bnt-choix{
+    animation: none;
+    background-color: #F93EE7;
+    color:#F5F5F5 ;
+}
+
+.clic-bnt-choix-play{
+    background-color: #F93EE7;
+    animation: choix linear .5s infinite alternate;
+    cursor: pointer;
+}
+
+.clic-triangle{
+    border-left: 35px solid #945DF3;
 }
 
 @keyframes choix{
