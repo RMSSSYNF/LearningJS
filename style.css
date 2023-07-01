@@ -4,6 +4,8 @@
     margin: 0;
 }
 
+/* les body  */
+
  body{
     display: flex;
     justify-content: center;
@@ -16,13 +18,10 @@
     font-size: 40px;
 }
 
-footer{
-    display: none;
-}
+/* le cadere principale */
 
 main{
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
     margin: 70px 20% 0;
@@ -32,9 +31,9 @@ main{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 5px;
 }
-.carreaux-jeux{
-    display: none;
-}
+
+/* l'entête du cadre principale */
+
 main .contener-head{
     margin: 22px 21px 0;
     height: 271px;
@@ -44,11 +43,7 @@ main .contener-head{
 }
 main .contener-head p{
     text-align: center;
-    /* font-family: 'Segoe UI','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px; */
-    /* font-weight:500 ; */
     margin: 72px 0 39px ;
-    /* color: #707070; */
 }
 .contener-head p span{
     font-size: 45px;
@@ -64,6 +59,8 @@ main .contener-head p{
     color: #76F538;
 
 }
+
+/* le bouton play du cadre */
 
 .btn{
     position: relative;
@@ -87,6 +84,8 @@ main .contener-head p{
     margin:25px 35px ;
 }
 
+/* le pied de page du cadre */
+
 .contener-footer{
     display: flex;
     align-items: center;
@@ -97,7 +96,7 @@ main .contener-head p{
     background-color: #BC95FF;
     margin-top: 39px;
 }
-/* .contener-footer*/ button{ 
+button {
     height: 65px;
     width: 172px;
     border-radius: 10px;
@@ -106,11 +105,14 @@ main .contener-head p{
     font-size: 20px;
     color: inherit;
     font-family: inherit;
+}
+ .contener-footer button{ 
     cursor: pointer;
     animation: choix linear .5s infinite alternate;
 
 }
 
+/* les classes laissées pour le javascript */
 
 .clic-bnt-choix{
     animation: none;
@@ -135,12 +137,13 @@ main .contener-head p{
      animation: ouvertureInf .5s linear forwards; 
 
 }
-
-.contener-head, .btn ,.contener-footer{
+.carreaux-jeux{
     display: none;
 }
-
-.carreaux-jeux{
+footer{
+    display: none;
+}
+.carreaux-jeux-active{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -149,14 +152,17 @@ main .contener-head p{
     height: 430px;
     width: 450px;
 }
-.carreaux-jeux .case{
+.carreaux-jeux .cse{
     height: 143.33px;
     width: 150px;
     border: 3px solid;
     margin: 0;
     padding: 0;
+    cursor: pointer;
+    font-size: 105px;
+    text-align: center;
 }
-footer{
+.footer-active{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -227,5 +233,4 @@ footer{
     margin-top: 0px;
     opacity: 0;
 }
-
 }
